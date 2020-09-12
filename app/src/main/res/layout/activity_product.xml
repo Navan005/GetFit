@@ -1,9 +1,287 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/cardview_dark_background"
     tools:context=".ProductActivity">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardview_id"
+                android:clickable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:focusable="true">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/dumbbells"
+                            android:layout_width="120dp"
+                            android:layout_height="120dp"
+                            android:src="@drawable/dumbel"
+                            android:scaleType="centerCrop"
+                            android:background="#2d2d2d"
+                            />
+
+
+
+                    <TextView
+                        android:id="@+id/dumbbellsText"
+                        android:textColor="#2d2d2d"
+                        android:gravity="center"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:typeface="serif"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Dumbbells"/>
+
+
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardview_id1"
+                android:clickable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:focusable="true">
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/kettlebells"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:src="@drawable/kettlebell"
+                        android:scaleType="centerCrop"
+                        android:background="#2d2d2d"
+                        />
+
+
+
+                    <TextView
+                        android:id="@+id/kettlebellsText"
+                        android:textColor="#2d2d2d"
+                        android:gravity="center"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:typeface="serif"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Kettlebells"/>
+
+
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardview_id3"
+                android:clickable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:focusable="true">
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/bars"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:src="@drawable/bars"
+                        android:scaleType="centerCrop"
+                        android:background="#2d2d2d"
+                        />
+
+
+
+                    <TextView
+                        android:id="@+id/barsText"
+                        android:textColor="#2d2d2d"
+                        android:gravity="center"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:typeface="serif"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Lifting Bars"/>
+
+
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardview_id4"
+                android:clickable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:focusable="true">
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/plates"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:src="@drawable/plates"
+                        android:scaleType="centerCrop"
+                        android:background="#2d2d2d"
+                        />
+
+
+
+                    <TextView
+                        android:id="@+id/platesText"
+                        android:textColor="#2d2d2d"
+                        android:gravity="center"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:typeface="serif"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Weight Plates"/>
+
+
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardview_id5"
+                android:clickable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:focusable="true">
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/xtraining"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:src="@drawable/xtraining"
+                        android:scaleType="centerCrop"
+                        android:background="#2d2d2d"
+                        />
+
+
+
+                    <TextView
+                        android:id="@+id/xtrainingText"
+                        android:textColor="#2d2d2d"
+                        android:gravity="center"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:typeface="serif"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="X-Training"/>
+
+
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardview_id6"
+                android:clickable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:focusable="true">
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/liftingaccess"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:src="@drawable/liftingaccess"
+                        android:scaleType="centerCrop"
+                        android:background="#2d2d2d"
+                        />
+
+
+
+                    <TextView
+                        android:id="@+id/liftingaccessText"
+                        android:textColor="#2d2d2d"
+                        android:gravity="center"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:typeface="serif"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Lifting Accessories"/>
+
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

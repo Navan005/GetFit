@@ -24,6 +24,10 @@
             app:title="@string/sync_title" />
 
         <SwitchPreferenceCompat
+            app:key="sync"
+            app:title="Notifications" />
+
+        <SwitchPreferenceCompat
             app:dependency="sync"
             app:key="attachment"
             app:summaryOff="@string/attachment_summary_off"
