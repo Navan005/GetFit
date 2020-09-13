@@ -45,6 +45,17 @@
                 android:text="Continue Shopping"
                 tools:ignore="UnusedAttribute" />
 
+            <Button
+                android:id="@+id/exit_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="80dp"
+                android:textColor="@color/cardview_light_background"
+                android:backgroundTint="#FF0000"
+                android:text="Log Out "
+                tools:ignore="UnusedAttribute" />
+
         </LinearLayout>
     </ScrollView>
 </LinearLayout>
