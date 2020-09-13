@@ -32,5 +32,46 @@ private CardView cardview0, cardview1, cardview3, cardview4, cardview5, cardview
                 startActivity(intent);
             }
         });
+
+        cardview1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent(ProductActivity.this, KettlebellActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        cardview3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent(ProductActivity.this, LiftingbarsActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        cardview4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent(ProductActivity.this, WeightplatesActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        cardview5.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent(ProductActivity.this, XtrainingActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        cardview6.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent(ProductActivity.this, LiftingaccessActivity.class);
+                startActivity(intent);
+            }
+        });
+
     }
 }

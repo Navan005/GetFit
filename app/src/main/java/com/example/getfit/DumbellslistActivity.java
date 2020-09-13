@@ -20,10 +20,16 @@ public class DumbellslistActivity extends AppCompatActivity {
 
         // Making a array list in order to store value.
         lstProduct = new ArrayList<>();
-        lstProduct.add(new Product("1000 IU vitamin D tablets, Essentials","240UN 1000 IU vitamin D tablets, Essentials","$10.99",R.drawable.logo));
-        lstProduct.add(new Product("Chocolate Flavoured Meal Replacement, High Protein","6X237ml Chocolate Flavoured Meal Replacement, High Protein", "$11.49",R.drawable.logo));
-        lstProduct.add(new Product("Chocolate chip energy bar","12X68gm Chocolate chip energy bar", "$18.99",R.drawable.logo));
-        lstProduct.add(new Product("High Protein Meal Replacement, Nutrium","6X237ml High Protein Meal Replacement, Nutrium", "$9.99",R.drawable.logo));
+        lstProduct.add(new Product("10lb Virgin Rubber Hex Dumbbell No Odour","Made with 100% Virgin rubber, No Toxic Smell, Premium Black Handles.","$20",R.drawable.dumbell1));
+        lstProduct.add(new Product("Element Fitness 85lbs Platinum Dumbbell","85lbs Dumbbell SOLD INDIVIDUALLY\n" +
+                "\n" +
+                "Element Commercial Round Dumbbells Gun Metal have been designed to meet the requirements of commercial gyms and elite training facilities.", "$297.50",R.drawable.dumbell2));
+        lstProduct.add(new Product("Neoprene 05lbs Dumbbell","he neoprene covered dumbbells are perfect for light weight training, and ideal for training in 1lb progressive increments.\n" +
+                "\n" +
+                "This makes Neoprene dumbbells great for rehabilitation, and novice athletes, and even incorporating into aerobics, cardio routines, and HIIT ", "$11.25",R.drawable.dumbell3));
+        lstProduct.add(new Product("XM 6 Pair Vertical Dumbbell Rack SET","Holds 6 Pairs of dumbbells, from 5 lb up to 30 lb (5, 10, 15, 20, 25 and 30 lb). Larger increments may cause issues with spacing.\n" +
+                "\n" +
+                "Black Powder Coat finish frame", "$399.00",R.drawable.dumbell4));
 
         //Assigning a new reclerview variable and setting layout using grid layout with 1 product per line.
         RecyclerView recyclev = (RecyclerView) findViewById(R.id.recyclerview_id);
