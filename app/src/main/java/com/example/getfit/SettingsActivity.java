@@ -1,3 +1,10 @@
+/**
+ * This activity provides javacode for settings page.
+ *
+ * @author Navandeep Singh
+ * @version 4.0.1
+ */
+
 package com.example.getfit;
 
 import android.os.Bundle;

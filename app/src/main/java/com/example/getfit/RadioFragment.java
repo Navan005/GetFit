@@ -1,3 +1,10 @@
+/**
+ * This class provides implementation regarding Dialog box used in delivery options..
+ *
+ * @author Navandeep Singh
+ * @version 4.0.1
+ */
+
 package com.example.getfit;
 
 import android.app.Dialog;
@@ -39,6 +46,7 @@ public class RadioFragment extends DialogFragment {
 
         final String[] list = getActivity().getResources().getStringArray(R.array.choice_items);
 
+        //This will show a dialog box giving user the option to select type od delivery with information lik time,price.
         builder.setTitle("Delivery Options")
                 .setSingleChoiceItems(list, position, new DialogInterface.OnClickListener() {
                     @Override

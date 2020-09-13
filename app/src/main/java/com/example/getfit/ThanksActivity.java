@@ -1,3 +1,10 @@
+/**
+ * This activity confirms user about successful payment.
+ *
+ * @author Navandeep Singh
+ * @version 4.0.1
+ */
+
 package com.example.getfit;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -17,8 +24,11 @@ public class ThanksActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_thanks);
 
+        //Here payment button is defined .
         payment=(Button) findViewById(R.id.continue_shopping) ;
 
+
+        //Here on being this button being clicked, it will first show a toast message then it will send the user to product activity.
         payment.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

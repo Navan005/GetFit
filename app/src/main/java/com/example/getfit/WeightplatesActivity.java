@@ -1,3 +1,10 @@
+/**
+ * This activity provides information regarding weight plates.
+ *
+ * @author Navandeep Singh
+ * @version 4.0.1
+ */
+
 package com.example.getfit;
 
 import androidx.appcompat.app.AppCompatActivity;

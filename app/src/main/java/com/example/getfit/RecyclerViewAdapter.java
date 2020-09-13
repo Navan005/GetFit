@@ -1,3 +1,10 @@
+/**
+ * This class provides information regarding recycler view.
+ *
+ * @author Navandeep Singh
+ * @version 4.0.1
+ */
+
 package com.example.getfit;
 
 import android.content.Context;

@@ -1,3 +1,11 @@
+/**
+ * This class implements the backend Interface.
+ *It is activated when any cardview is clicked on product activity.
+ *
+ * @author Navandeep Singh
+ * @version 4.0.1
+ */
+
 package com.example.getfit;
 
 public class Product {

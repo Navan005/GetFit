@@ -1,3 +1,10 @@
+/**
+ * This activity provides different categories in form of clickable cardviews.
+ *
+ * @author Navandeep Singh
+ * @version 4.0.1
+ */
+
 package com.example.getfit;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -20,6 +27,7 @@ private CardView cardview0, cardview1, cardview3, cardview4, cardview5, cardview
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_product);
 
+        //Here all the cardviews are defined.
         cardview0=(CardView) findViewById(R.id.cardview_id);
         cardview1=(CardView) findViewById(R.id.cardview_id1);
         cardview3=(CardView) findViewById(R.id.cardview_id3);
@@ -27,6 +35,7 @@ private CardView cardview0, cardview1, cardview3, cardview4, cardview5, cardview
         cardview5=(CardView) findViewById(R.id.cardview_id5);
         cardview6=(CardView) findViewById(R.id.cardview_id6);
 
+        //Here on clicking each cardview, user will be sent to different activities depending on the user's choice.
         cardview0.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -84,6 +93,7 @@ private CardView cardview0, cardview1, cardview3, cardview4, cardview5, cardview
         return true;
     }
 
+    //This is the shortcut in the navbar for going to contact and settings activity.
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         int id = item.getItemId();

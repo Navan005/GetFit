@@ -1,3 +1,11 @@
+/**
+ * This activity asks user for his information for registering him.
+ * It performs a validation check too, like if the registering user is an already user or not.
+ *
+ * @author Navandeep Singh
+ * @version 4.0.1
+ */
+
 package com.example.getfit;
 
 import androidx.annotation.NonNull;
@@ -41,6 +49,7 @@ public class SignupActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_signup);
 
+        //All Edit fields are defined here containing user data for registering.
         registerBtn = findViewById(R.id.btnRegLogin);
         loginBtn = findViewById(R.id.btnLogin);
         mFullName   = findViewById(R.id.etRegName);
@@ -48,11 +57,12 @@ public class SignupActivity extends AppCompatActivity {
         mPassword   = findViewById(R.id.etRegPassword);
         mPhone      = findViewById(R.id.etRegPhone);
 
+        //This is calling firebase in fauth variable.
         fAuth = FirebaseAuth.getInstance();
         fStore = FirebaseFirestore.getInstance();
 
-        
 
+//this is click listener event for register button. On being clicked first validates the user inputed data then if same account is not in the database already then registers the user.
         registerBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -61,6 +71,8 @@ public class SignupActivity extends AppCompatActivity {
                 String password = mPassword.getText().toString().trim();
                 final String fullName = mFullName.getText().toString();
                 final String phone = mPhone.getText().toString();
+
+                //validates ifs any of the edit text fields is empty.
 
                 if (TextUtils.isEmpty(email)) {
                     mEmail.setError("Email is Required.");
@@ -127,6 +139,7 @@ public class SignupActivity extends AppCompatActivity {
             }
         });
 
+        //it send the users to login page on being clicked.
         loginBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -142,6 +155,7 @@ public class SignupActivity extends AppCompatActivity {
         return true;
     }
 
+    //This is shortcuts for settings and contact activity.
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         int id = item.getItemId();
