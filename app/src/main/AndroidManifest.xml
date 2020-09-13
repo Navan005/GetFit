@@ -9,22 +9,25 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ContactActivity"></activity>
-        <activity android:name=".LiftingaccessActivity" />
-        <activity android:name=".XtrainingActivity" />
-        <activity android:name=".WeightplatesActivity" />
-        <activity android:name=".LiftingbarsActivity" />
-        <activity android:name=".KettlebellActivity" />
-        <activity android:name=".CheckoutActivity" />
-        <activity android:name=".BriefActivity" />
-        <activity android:name=".DumbellslistActivity" />
+        <activity android:name=".ThanksActivity" android:parentActivityName=".ShippingActivity"></activity>
+        <activity android:name=".ShippingActivity" android:parentActivityName=".ProductActivity"/>
+        <activity android:name=".ContactActivity" android:parentActivityName=".MainActivity"/>
+        <activity android:name=".LiftingaccessActivity" android:parentActivityName=".ProductActivity"/>
+        <activity android:name=".XtrainingActivity" android:parentActivityName=".ProductActivity"/>
+        <activity android:name=".WeightplatesActivity" android:parentActivityName=".ProductActivity"/>
+        <activity android:name=".LiftingbarsActivity" android:parentActivityName=".ProductActivity"/>
+        <activity android:name=".KettlebellActivity" android:parentActivityName=".ProductActivity"/>
+        <activity android:name=".CheckoutActivity" android:parentActivityName=".ProductActivity"/>
+        <activity android:name=".BriefActivity" android:parentActivityName=".ProductActivity"/>
+        <activity android:name=".DumbellslistActivity" android:parentActivityName=".ProductActivity"/>
         <activity
             android:name=".SettingsActivity"
-            android:label="@string/title_activity_settings" />
-        <activity android:name=".ForgotpasswordActivity" />
-        <activity android:name=".ProductActivity" />
-        <activity android:name=".SignupActivity" />
-        <activity android:name=".LoginActivity" />
+            android:label="@string/title_activity_settings"
+            android:parentActivityName=".MainActivity"/>
+        <activity android:name=".ForgotpasswordActivity" android:parentActivityName=".LoginActivity"/>
+        <activity android:name=".ProductActivity" android:parentActivityName=".MainActivity"/>
+        <activity android:name=".SignupActivity" android:parentActivityName=".MainActivity"/>
+        <activity android:name=".LoginActivity" android:parentActivityName=".MainActivity"/>
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

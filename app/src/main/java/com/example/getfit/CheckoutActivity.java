@@ -60,31 +60,8 @@ public class CheckoutActivity extends AppCompatActivity implements RadioFragment
         payment.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
-                Toast.makeText(getBaseContext(), "Payment Successful! Thanks for shopping with BuyFresh.", Toast.LENGTH_SHORT).show();
-
-                builder.setMessage("Do you want to continue Shopping ?")
-                        .setCancelable(false)
-                        .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
-                            public void onClick(DialogInterface dialog, int id) {
-
-                                Intent intent = new Intent(CheckoutActivity.this, ProductActivity.class);
-                                startActivity(intent);
-                            }
-                        })
-                        .setNegativeButton("No", new DialogInterface.OnClickListener() {
-                            public void onClick(DialogInterface dialog, int id) {
-                                //  Action for 'NO' Button
-                                dialog.cancel();
-                                Toast.makeText(getApplicationContext(),"Have a Great day!",
-                                        Toast.LENGTH_SHORT).show();
-                            }
-                        });
-                AlertDialog alert = builder.create();
-                //Setting the title manually
-                alert.setTitle("Dear Customer,");
-                alert.show();
-
+               Intent intent = new Intent(CheckoutActivity.this, ShippingActivity.class);
+               startActivity(intent);
             }
         });
 
