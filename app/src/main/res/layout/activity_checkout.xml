@@ -23,8 +23,7 @@
                 android:layout_width="300dp"
                 android:layout_height="168dp"
                 android:layout_marginTop="60dp"
-                android:layout_marginLeft="60dp"
-                android:layout_marginRight="60dp"
+                android:layout_gravity="center"
                 app:srcCompat="@drawable/logo"
                  />
 
@@ -136,6 +135,7 @@
                         android:layout_marginTop="10dp"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:textStyle="bold"
                         android:text="Select Delivery Options" />
 
 
@@ -150,9 +150,9 @@
                     android:layout_marginRight="15dp"
                     android:layout_marginBottom="40dp"
                     android:layout_marginTop="20dp"
-                    android:background="@drawable/input_design"
+                    android:background="@color/design_default_color_on_secondary"
                     android:padding="20dp"
-                    android:text="proceed_to_payment"
+                    android:text="proceed to payment"
                     android:textColor="@android:color/white"
                     android:textSize="18sp"
                     android:textStyle="bold"/>

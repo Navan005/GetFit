@@ -23,8 +23,7 @@
                 android:layout_width="300dp"
                 android:layout_height="168dp"
                 android:layout_marginTop="60dp"
-                android:layout_marginLeft="60dp"
-                android:layout_marginRight="60dp"
+                android:layout_gravity="center"
                 app:srcCompat="@drawable/logo"
                 />
 
@@ -35,11 +34,11 @@
                 android:layout_marginLeft="20dp"
                 android:layout_marginTop="20dp"
                 android:layout_marginRight="20dp"
-                android:background="@android:color/background_dark"
+                android:textColor="@android:color/background_dark"
                 android:shadowColor="#3DB61B"
-                android:text="Enter your details"
-                android:textColor="@android:color/white"
-                android:textSize="18sp" />
+                android:textStyle="bold"
+                android:text="Enter your details:"
+                android:textSize="25sp" />
 
 
             <EditText
@@ -135,10 +134,10 @@
                 android:layout_marginRight="15dp"
                 android:layout_marginTop="15dp"
                 android:layout_marginBottom="10dp"
-                android:background="@color/colorPrimary"
                 android:padding="17dp"
                 android:text="Create account"
                 android:textColor="@android:color/white"
+                android:background="#000000"
                 android:textSize="18sp"
                 android:textStyle="bold" />
 

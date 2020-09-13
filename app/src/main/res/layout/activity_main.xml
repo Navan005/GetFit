@@ -22,16 +22,17 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/logo_image"
-        android:layout_centerHorizontal="true"
+        android:textAlignment="center"
         android:layout_marginLeft="20dp"
         android:layout_marginTop="50dp"
         android:layout_marginRight="20dp"
         android:background="@android:color/background_dark"
         android:shadowColor="#3DB61B"
+        android:padding="9dp"
         android:fontFamily="sans-serif-condensed-medium"
         android:text="Welcome to GetFit, your own store to get fitness equipments. "
         android:textColor="@android:color/white"
-        android:textSize="20sp" />
+        android:textSize="18sp" />
 
     <Button
         android:id="@+id/main_join_btn"
@@ -41,10 +42,10 @@
         android:layout_marginLeft="15dp"
         android:layout_marginRight="15dp"
         android:layout_marginBottom="5dp"
-        android:background="#CD020202"
         android:padding="20dp"
         android:text="Join Now"
         android:textColor="@android:color/white"
+        android:background="#CD020202"
         android:textSize="20sp"
         android:textStyle="bold"/>
 

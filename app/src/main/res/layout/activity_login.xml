@@ -21,8 +21,7 @@ tools:context=".LoginActivity">
             android:layout_width="300dp"
             android:layout_height="168dp"
             android:layout_marginTop="60dp"
-            android:layout_marginLeft="60dp"
-            android:layout_marginRight="60dp"
+            android:layout_gravity="center"
             app:srcCompat="@drawable/logo"
             />
 
@@ -105,10 +104,10 @@ tools:context=".LoginActivity">
             android:layout_marginRight="15dp"
             android:layout_marginTop="15dp"
             android:layout_marginBottom="10dp"
-            android:background="@color/colorPrimary"
             android:padding="17dp"
             android:text="Log In"
             android:textColor="@android:color/white"
+            android:background="#000000"
             android:textSize="18sp"
             android:textStyle="bold" />
 
@@ -120,10 +119,10 @@ tools:context=".LoginActivity">
             android:layout_marginRight="15dp"
             android:layout_marginTop="10dp"
             android:layout_marginBottom="10dp"
-            android:background="#373333"
             android:padding="17dp"
             android:text="Don't have an Account? Create new account"
             android:textColor="@android:color/white"
+            android:background="#000000"
             android:textSize="18sp"
             android:textStyle="bold" />
 
